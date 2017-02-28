@@ -34,7 +34,6 @@ class ViewController: UIViewController {
     var yBound = CGFloat()
     
     func scramble() {
-        //super.init()
         xBound = UIScreen.main.bounds.width
         yBound = UIScreen.main.bounds.height
         print("xBound:\(xBound) yBound:\(yBound)")
@@ -68,10 +67,6 @@ class ViewController: UIViewController {
         scramble()
     }
     
-    /*override func viewWillAppear(_ animated: Bool) {
-        rakeImage.translatesAutoresizingMaskIntoConstraints = true
-        scramble()
-    }*/
     
     
     @IBAction func handlePan(recognizer: UIPanGestureRecognizer) {
